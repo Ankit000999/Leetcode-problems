@@ -1,0 +1,36 @@
+/*Given an integer number n, return the difference
+between the product of its digits and the sum of its digits.*/
+ 
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int a;
+cin >>a ;
+int q=1;
+int p=0;
+int duplicate =a;
+int s;
+
+while(a>0){
+    int digit=a%10;
+     q=q*digit;
+      a=a/10;
+}
+
+a=duplicate;
+  while(a>0){   
+      int number=a%10;
+      p=p+number;
+     a=a/10;
+    
+}
+     s=q-p;
+
+    cout<<q<<" is the product of given numbers."<<endl;
+    cout<<p<<" is the sum of given number"<<endl;
+    cout<<s<<" is the diffrence between numbers"<<endl;
+    
+	return 0;
+}
+
