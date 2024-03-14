@@ -1,4 +1,5 @@
-class Solution {
+class Solution 
+{
     private:
 int convert_to_binary(int n) {
   int binary[32];
